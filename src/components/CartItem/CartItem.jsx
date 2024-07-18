@@ -1,0 +1,29 @@
+import './CartItem.css'
+import { IoCartOutline} from "react-icons/io5";
+import perfume from '../../images/perfume.jpg'
+function CartItem({id,title,discount,old_price,type,new_price}) {
+    return (  
+        <div className="cartItem">
+            <div className='image'>
+                <img src={perfume} width={100} />
+            </div>
+            <div className='cart_item_text'>
+                <span className='type'>{type}</span>
+                <p className='title'>{title}</p>
+                <div className='price_and_buy'>
+                    <div className='price'>
+                        
+                        <span className='new_price'>${new_price}</span>
+                        <br />
+                        {discount!==0?<span className='discount_part'> <del>${old_price}</del> <b>-{discount}%</b> </span>:null}
+                    </div>
+                    <div className='buy'>
+                        <button className='buy_btn'> <IoCartOutline/> Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default CartItem;

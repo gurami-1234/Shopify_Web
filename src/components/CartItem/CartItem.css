@@ -1,0 +1,68 @@
+.cartItem{
+    width: 300px;
+    border: 1px solid rgb(154, 154, 154);
+    background-color: transparent;
+}
+
+.cartItem .image{
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid rgb(154, 154, 154);
+}
+.cartItem .image img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+.cartItem .image img:hover{
+    transform: scale(1.1);
+}
+.cartItem .cart_item_text{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.cartItem .cart_item_text .type{
+    color: rgb(96, 96, 96);
+    font-size: 1.1rem;
+}
+.cartItem .cart_item_text .title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cartItem .cart_item_text .price_and_buy{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartItem .cart_item_text .price_and_buy .new_price{
+    font-size: 1.4rem;
+    color: rgb(38, 118, 224);
+}
+
+.cartItem .cart_item_text .price_and_buy .discount_part del{
+    color: black;
+    color:rgb(96, 96, 96);
+}
+.cartItem .cart_item_text .price_and_buy .buy{
+    width: 150px;
+    height: 40px;
+}
+.cartItem .cart_item_text .price_and_buy .buy .buy_btn{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236,72,153);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.cartItem .cart_item_text .price_and_buy .buy .buy_btn:hover{
+    background-color: rgb(38, 118, 224);
+}

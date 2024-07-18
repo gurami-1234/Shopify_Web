@@ -1,0 +1,15 @@
+.layout_container{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.layout_container .Cart_Items_Layout{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 30px 0;
+}
+
+.layout_container.dark{
+    color: white;
+}

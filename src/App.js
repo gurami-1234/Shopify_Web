@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import ThemeContextComponent from './Context/ThemeContext/ThemeContext';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Categories from './pages/Categories/Categories';
+import Home from './pages/Home/Home';
+import Products from './pages/Products/Products';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeContextComponent>
+        <Navbar/>
+        <Home/>
+        {/* <Categories/> */}
+        {/* <Products/> */}
+        <Footer/>
+      </ThemeContextComponent>
+      
     </div>
   );
 }
