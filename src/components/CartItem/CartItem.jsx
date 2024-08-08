@@ -1,11 +1,10 @@
 import './CartItem.css'
 import { IoCartOutline} from "react-icons/io5";
-import perfume from '../../images/perfume.jpg'
-function CartItem({id,title,discount,old_price,type,new_price}) {
+function CartItem({id,image, title,discount,old_price,type,new_price}) {
     return (  
         <div className="cartItem">
             <div className='image'>
-                <img src={perfume} width={100} />
+                <img src={image} width={100} />
             </div>
             <div className='cart_item_text'>
                 <span className='type'>{type}</span>

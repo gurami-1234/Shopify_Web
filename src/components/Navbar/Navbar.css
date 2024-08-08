@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
+    box-shadow:5px 0px 10px 1px rgb(162, 162, 162) ;
+    
     padding: 10px;
 }
 .nav-bar.dark{
