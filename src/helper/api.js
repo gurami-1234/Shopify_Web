@@ -2,11 +2,11 @@ import axios from "axios";
 
 const endpoint = 'https://dummyjson.com/'
 const productEndpoint = "products"
-async function getAllProduct(){
+async function getAllProduct(limit=8,skip=0){
     return axios.get(`${endpoint}${productEndpoint}`,{
         params:{
-            limit:8,
-            skip:10
+            limit,
+            skip
         }
     })
     .then(
@@ -17,8 +17,11 @@ async function getAllProduct(){
     
 }
 
-function getSingleProduct(){
-
+function getSingleProduct(id){
+    return axios.get(`${endpoint}products/${id}`)
+    .then(
+        (data)=>data.data
+    )
 }
 
 export {getAllProduct,getSingleProduct}

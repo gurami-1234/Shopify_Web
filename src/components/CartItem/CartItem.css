@@ -4,7 +4,7 @@
     background-color: transparent;
 }
 
-.cartItem .image{
+.cartItem .image{ 
     width: 100%;
     height: 300px;
     border-bottom: 1px solid rgb(154, 154, 154);
@@ -30,6 +30,13 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
+}
+.cartItem .cart_item_text .title a{
+    text-decoration: none;
+    color: #030303;
+}
+.cartItem .cart_item_text .title a:hover{
+    text-decoration: underline;
 }
 
 .cartItem .cart_item_text .price_and_buy{

@@ -5,12 +5,13 @@ import { FaUser } from "react-icons/fa";
 import { ThemeContext } from "../../Context/ThemeContext/ThemeContext";
 import './Navbar.css'
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 const Navbar = ()=>{
     const {isDark,setIsDark}= useContext(ThemeContext)
     return(
         <nav className={isDark?"nav-bar dark":"nav-bar light" }>
             <div className="logo">
-                <span>Shopify</span>
+                <span><Link to="/">SHOPIFY</Link></span>
             </div>
             <div className="search-bar">
                 <input type="text" placeholder="Search for a product..." className="search"/>
@@ -19,7 +20,7 @@ const Navbar = ()=>{
                 </button>
             </div>
             <ul className="nav-right-elems">
-                <li className="page-item"><a href="#" className={isDark?"dark":'light'}>Products</a></li>
+                <li className="page-item"><Link to="/products" className={isDark?"dark":'light'}>Products</Link></li>
                 <li className="page-item"><a href="#" className={isDark?"dark":'light'}>Categories</a></li>
 
                 <li className="login-item">
