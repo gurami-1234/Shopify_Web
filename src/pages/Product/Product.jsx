@@ -5,9 +5,10 @@ function Product() {
     const {productId} = useParams()
     const [productData,setProductData] = useState({})
     useEffect(()=>{
-        getSingleProduct(productId).then((data)=>{
-            setProductData(data)
-        })
+        getSingleProduct(productId)
+            .then((data)=>{
+                setProductData(data)
+            })
     },[])
 
 

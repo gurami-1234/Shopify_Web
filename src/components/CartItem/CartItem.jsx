@@ -3,7 +3,7 @@ import './CartItem.css'
 import { IoCartOutline} from "react-icons/io5";
 function CartItem({id,image, title,discount,old_price,type,new_price}) {
     return (   
-        <div className="cartItem">
+        <div className="cartItem"> 
             <div className='image'>
                 <img src={image} width={100} />
             </div>

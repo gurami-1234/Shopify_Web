@@ -7,7 +7,7 @@ async function getAllProduct(limit=8,skip=0){
         params:{
             limit,
             skip
-        }
+        } 
     })
     .then(
         (data)=>{
