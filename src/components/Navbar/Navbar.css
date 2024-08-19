@@ -26,6 +26,9 @@
     font-family: "Dancing Script";
     font-weight: bold;
 }
+.nav-bar.dark .logo a{
+    color: white;
+}
 .nav-bar .search-bar{
     display: flex;
     align-items: center;
@@ -82,7 +85,9 @@
     top: -10px;
     right: -10px;
 }
-
+.nav-bar.light .nav-right-elems .cart-item .counter{
+    color: white;
+}
 .nav-bar .nav-right-elems .nav-btn{
     background-color: transparent;
     

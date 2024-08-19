@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom';
 import './CartItem.css'
 import { IoCartOutline} from "react-icons/io5";
+import { useContext } from 'react';
+import {ThemeContext} from '../../Context/ThemeContext/ThemeContext.jsx'
 function CartItem({id,image, title,discount,old_price,type,new_price}) {
+    const {isDark} = useContext(ThemeContext)
     return (   
-        <div className="cartItem"> 
+        <div className={isDark?"cartItem dark":"cartItem"}> 
             <div className='image'>
-                <img src={image} width={100} />
+                <img src={image} width={100} /> 
             </div>
             <div className='cart_item_text'>
                 <span className='type'>{type}</span>

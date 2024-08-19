@@ -12,7 +12,7 @@ const Navbar = ()=>{
         <nav className={isDark?"nav-bar dark":"nav-bar light" }>
             <div className="logo">
                 <span><Link to="/">SHOPIFY</Link></span>
-            </div>
+            </div> 
             <div className="search-bar">
                 <input type="text" placeholder="Search for a product..." className="search"/>
                 <button className="search-btn">
