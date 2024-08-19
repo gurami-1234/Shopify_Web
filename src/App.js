@@ -1,14 +1,8 @@
 import './App.css';
 import { Routes,Route } from 'react-router-dom';
 import ThemeContextComponent from './Context/ThemeContext/ThemeContext';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import Categories from './pages/Categories/Categories';
-import Home from './pages/Home/Home';
-import Products from './pages/Products/Products';
-import NotFound from './pages/NotFound/NotFound';
-import MainLayout from './Layouts/MainLayout/MainLayout';
-import Product from './pages/Product/Product';
+import { MainLayout } from './Layouts';
+import { Categories,Home,Product,Products,NotFound } from './pages';
 
 function App() {
   return (
