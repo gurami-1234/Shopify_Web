@@ -1,8 +1,12 @@
+import { useContext } from 'react';
 import './AuthLayout.css'
+import { AuthenticationContext } from '../../../Context/AuthenticationContext/AuthenticationContext';
 function AuthLayout({children}) {
     return (  
         <div className="dark-background">
-            {children}
+            <div className='auth-container' >
+                {children}
+            </div>
         </div>
     );
 }

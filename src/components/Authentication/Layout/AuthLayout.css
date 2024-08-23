@@ -11,3 +11,8 @@
     z-index: 9;
     
 }
+.dark-background .auth-container{
+    width: max-content;
+    z-index: 999;
+    position: absolute;
+}

@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../Context/ThemeContext/ThemeContext";
-import {CartItemsLayout} from "../../Layouts";
-import { getAllProduct } from "../../helper/api";
-import {CartItem} from "../../components";
+import { ThemeContext } from "Context/ThemeContext/ThemeContext";
+import {CartItemsLayout} from "Layouts";
+import { getAllProduct } from "helper/api";
+import {CartItem} from "components";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import "./Home.css"
 function Home() {

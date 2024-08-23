@@ -7,7 +7,6 @@ function AuthenticationComponent({children}) {
         isOpen,
         setIsOpen
     }
-    console.log(isOpen);
     return (  
         <AuthenticationContext.Provider value={obj}>
             {children}

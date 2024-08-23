@@ -54,9 +54,9 @@ const Navbar = ()=>{
                 
             </nav>
             {
-                isOpen&(<AuthLayout>
-                <Login/>
-            </AuthLayout>)
+                isOpen&&(<AuthLayout>
+                    <Login/>
+                </AuthLayout>)
             }
             
         </>

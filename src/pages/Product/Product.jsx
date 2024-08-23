@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getSingleProduct } from "../../helper/api";
+import { getSingleProduct } from "helper/api";
 function Product() {
     const {productId} = useParams()
     const [productData,setProductData] = useState({})
