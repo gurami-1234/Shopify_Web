@@ -4,7 +4,6 @@ export const ThemeContext = createContext()
 
 function ThemeContextComponent({children}) {
     let isDarkLocal = JSON.parse( localStorage.getItem("isDark") )
-    console.log(isDarkLocal);
     const [isDark,setIsDark] = useState(isDarkLocal==null?false:isDarkLocal)
     let obj = {
         isDark,
