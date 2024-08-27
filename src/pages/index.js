@@ -4,5 +4,5 @@ import Categories from './Categories/Categories.jsx'
 import NotFound from './NotFound/NotFound.jsx'
 import Product from './Product/Product.jsx'
 import Products from './Products/Products.jsx'
-
-export {Home,Categories, NotFound,Product,Products}
+import Profile from './Profile/Profile.jsx'
+export {Home,Categories, NotFound,Product,Products,Profile}

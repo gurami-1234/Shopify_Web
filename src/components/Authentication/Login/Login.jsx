@@ -3,22 +3,33 @@ import {ThemeContext} from 'Context/ThemeContext/ThemeContext'
 import { IoMdClose } from "react-icons/io";
 import { FaUnlock,FaUserAlt } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+import { getToken, loginUsingToken } from "helper/api";
 import { AuthenticationContext } from "Context/AuthenticationContext/AuthenticationContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './Login.css'
+import { AuthContext } from "Context/AuthContext/AuthContext";
 
 function Login() {
     const {isDark} = useContext(ThemeContext)
     const {setIsOpen} = useContext(AuthenticationContext)
+    const navigate = useNavigate()
+    const {isAuth,setIsAuth} = useContext(AuthContext)
     const [userInfo,setUserInfo] = useState({
         username:"",
         password:""
     })
 
+
     const login = ()=>{
-        console.log("USERNAME:",userInfo.username);
-        console.log("PASSWORD:",userInfo.password);
-        setUserInfo({username:'',password:''})
+        getToken(userInfo).then((token)=>{
+            localStorage.setItem("token",token)
+            loginUsingToken(token).then((data)=>{
+                setIsAuth(true)
+                console.log(data);
+                navigate("profile")
+                setIsOpen(false)
+            })
+        })
 
     }
 
