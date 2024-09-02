@@ -12,7 +12,7 @@ function CartItem({id,image, title,discount,old_price,type,new_price}) {
             </div>
             <div className='cart_item_text'>
                 <span className='type'>{type}</span>
-                <p className='title'><Link to={`product/${id}`}>{title}</Link></p>
+                <p className='title'><Link to={`/product/${id}`}>{title}</Link></p>
                 <div className='price_and_buy'>
                     <div className='price'>
                         

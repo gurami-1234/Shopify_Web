@@ -26,7 +26,7 @@ const Navbar = ()=>{
                 </div>
                 <ul className="nav-right-elems">
                     <li className="page-item"><Link to="/products" className={isDark?"dark":'light'}>Products</Link></li>
-                    <li className="page-item"><a href="#" className={isDark?"dark":'light'}>Categories</a></li>
+                    <li className="page-item"><Link to="/categories" className={isDark?"dark":'light'}>Categories</Link></li>
 
                     <li className="login-item" >
                         <FaUser /> 

@@ -1,0 +1,11 @@
+.categories-main{
+    width: 98%;
+    margin: 20px auto;
+}
+.categories-main .header{
+    font-size: 1.2rem;
+}
+.categories-main .categories-list{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+}

@@ -40,4 +40,21 @@ async function loginUsingToken(token){
     return resp.data
 }
 
-export {getAllProduct,getSingleProduct,getToken,loginUsingToken}
+async function getAllCategories(){
+    const resp = await axios.get(endpoint+"products/categories")
+    return resp.data
+}
+
+async function getSingleCategory(slug){
+    const resp = await axios.get(endpoint+"products/category/"+slug)
+    return resp.data.products
+}
+
+export {
+    getAllProduct,
+    getSingleProduct,
+    getToken,
+    loginUsingToken,
+    getAllCategories,
+    getSingleCategory
+}

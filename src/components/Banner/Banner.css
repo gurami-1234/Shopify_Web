@@ -1,0 +1,41 @@
+.dark-background{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.close{
+    display: none;
+}
+.dark-background .banner{
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 481px;
+    position: relative;
+}
+.dark-background .banner img{
+    width: 100%;
+    height: 100%;
+}
+.dark-background .banner .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(106,45,164);
+}
